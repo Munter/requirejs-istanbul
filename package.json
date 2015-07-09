@@ -1,0 +1,37 @@
+{
+  "name": "requirejs-istanbul",
+  "version": "0.0.0",
+  "description": "RequireJS plugin to instrument modules with Istanbul for code coverage",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "npm run lint && mocha",
+    "travis": "npm run lint && npm run coverage",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Munter/requirejs-istanbul"
+  },
+  "keywords": [
+    "requirejs",
+    "istanbul",
+    "coverage",
+    "loader",
+    "plugin"
+  ],
+  "author": "Peter Müller <munter@fumle.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munter/requirejs-istanbul/issues"
+  },
+  "homepage": "https://github.com/Munter/requirejs-istanbul",
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "requirejs": "^2.1.18",
+    "unexpected": "^9.2.1"
+  },
+  "dependencies": {
+    "istanbul": "^0.3.17"
+  }
+}
