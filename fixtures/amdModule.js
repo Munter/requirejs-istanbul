@@ -1,3 +1,5 @@
 define(function () {
-  return 'amdModule';
+  return function () {
+    return 'amdModule';
+  };
 });
